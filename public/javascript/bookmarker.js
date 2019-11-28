@@ -82,7 +82,7 @@ let bookmarker = {
 
     // create bookmark text
     bookmarkValue = document.createElement("p");
-    bookmarkValue.innerHTML = this.bookmarkInput.value;
+    bookmarkValue.innerText = this.bookmarkInput.value;
 
     // append text to bookmark div
     newBookmarkItem.appendChild(bookmarkValue);
