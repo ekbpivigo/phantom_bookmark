@@ -13,7 +13,6 @@ let bookmarker = {
     this.newBookmark = document.getElementById("newBookmarkDetail");
     this.addButton = document.getElementById("add-bookmark-btn");
     this.errorMessage = document.getElementById("error");
-    this.storedBookmarks = localStorage.setItem("bookmarks", "");
   },
 
 
@@ -68,7 +67,9 @@ let bookmarker = {
     bookmarkListItem.appendChild(bookmarkTrashButton);
 
     // add bookmark to bookmarkList
-    this.bookmarkList.appendChild(bookmarkListItem);
+    if (bookmarkValue.innerHTML.length > 1) {
+      this.bookmarkList.appendChild(bookmarkListItem);
+    }
   },
 
 
@@ -76,24 +77,26 @@ let bookmarker = {
   buildNewBookmarkDetail: function() {
     let newBookmarkItem, bookmarkValue;
 
-    // create list item
-    newBookmarkItem = document.createElement("div");
-    newBookmarkItem.setAttribute("class", "newBookmark");
+    if (this.bookmarkInput.value) {
+      // create list item
+      newBookmarkItem = document.createElement("div");
+      newBookmarkItem.setAttribute("id", "newBookmark");
 
-    // create bookmark text
-    bookmarkValue = document.createElement("p");
-    bookmarkValue.innerHTML = this.bookmarkInput.value;
+      // create bookmark text
+      bookmarkValue = document.createElement("p");
+      bookmarkValue.innerText = this.bookmarkInput.value;
 
-    // append text to bookmark div
-    newBookmarkItem.appendChild(bookmarkValue);
+      // append text to bookmark div
+      newBookmarkItem.appendChild(bookmarkValue);
 
-    // remove previous new bookmark item
-    if (this.newBookmark.children.length > 0) {
-      this.newBookmark.removeChild(this.newBookmark.children[0])
+      // remove previous new bookmark item
+      if (this.newBookmark.children.length > 0) {
+        this.newBookmark.removeChild(this.newBookmark.children[0])
+      }
+
+      // display newest bookmark
+      this.newBookmark.appendChild(newBookmarkItem);
     }
-
-    // display newest bookmark
-    this.newBookmark.appendChild(newBookmarkItem);
   },
 
 

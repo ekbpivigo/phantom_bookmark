@@ -33,4 +33,4 @@ Develop a JavaScript web app that maintains a list of bookmarks (links). The use
 
 
 ## Where does the app live?
-App is available at public link: [asdf](https://google.com).
+App is available at public link: [http://nameless-forest-49018.herokuapp.com/](http://nameless-forest-49018.herokuapp.com/).
