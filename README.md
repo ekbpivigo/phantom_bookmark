@@ -5,12 +5,15 @@ Develop a JavaScript web app that maintains a list of bookmarks (links). The use
 #### Technologies used
 - Basic layout (HTML/CSS)
 - ES6 JavaScript
+- Node
+- Expressjs
 
 #### Approach
 - Basic HTML template importing javascript module
 - JavaScript handles validation, adding and deleting of bookmarks
 - Instead of using routing, JavaScript controls visibility of components in template.
 - Deployed to Heroku using GitHub
+- Serve using express
 
 #### Outcome
 - Specs remaining unfulfilled:
