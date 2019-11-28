@@ -73,6 +73,7 @@ body {
   height: 5vw;
   width: 35vw;
   margin: 0;
+  padding: 0 10px;
   line-height: 5vw;
   overflow: scroll;
 }
