@@ -63,8 +63,8 @@ body {
 .bookmark {
   height: 5vw;
   width: 40vw;
-  display: inline-flex;
   margin: 15px;
+  display: inline-flex;
   background: #fff;
   border: none;
 }
@@ -74,6 +74,7 @@ body {
   width: 35vw;
   margin: 0;
   line-height: 5vw;
+  overflow: scroll;
 }
 
 .bookmark button, .newBookmarkItem button {
