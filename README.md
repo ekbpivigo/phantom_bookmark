@@ -2,7 +2,6 @@
 Develop a JavaScript web app that maintains a list of bookmarks (links). The user is able to add/edit/delete any link in the list.  The application should only use front-end technologies (ie no backend database!).
 
 
-### Flow
 #### Technologies used
 - Basic layout (HTML/CSS)
 - ES6 JavaScript
@@ -11,6 +10,7 @@ Develop a JavaScript web app that maintains a list of bookmarks (links). The use
 - Basic HTML template importing javascript module
 - JavaScript handles validation, adding and deleting of bookmarks
 - Instead of using routing, JavaScript controls visibility of components in template.
+- Deployed to Heroku using GitHub
 
 #### Outcome
 - Specs remaining unfulfilled:

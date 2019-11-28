@@ -1,0 +1,28 @@
+{
+  "name": "bookmark_app",
+  "version": "1.0.0",
+  "description": "Develop a JavaScript web app that maintains a list of bookmarks (links). The user is able to add/edit/delete any link in the list.  The application should only use front-end technologies (ie no backend database!).",
+  "main": "bookmarker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ekbpivigo/phantom_bookmark.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ekbpivigo/phantom_bookmark/issues"
+  },
+  "homepage": "https://github.com/ekbpivigo/phantom_bookmark#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
