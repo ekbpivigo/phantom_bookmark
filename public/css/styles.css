@@ -85,8 +85,9 @@ body {
   align-items: flex-end;
 }
 
-button:hover i {
-  color: #e91e63;
+.bookmark button:hover {
+  color: #fff;
+  background: #e91e63;
 }
 
 .newBookmark {
@@ -131,11 +132,12 @@ button:hover i {
   height: 40px;
   width: auto;
   background-color: #a7e6d4;
-  color: white;
+  color: #232323;
   border: none;
   margin-top: 2em;
 }
 
 #backButton:hover {
+  color: #fff;
   background-color: #e91e63;
 }
