@@ -13,6 +13,7 @@ let bookmarker = {
     this.newBookmark = document.getElementById("newBookmarkDetail");
     this.addButton = document.getElementById("add-bookmark-btn");
     this.errorMessage = document.getElementById("error");
+    this.storedBookmarks = localStorage.setItem("bookmarks", "");
   },
 
 
@@ -83,11 +84,11 @@ let bookmarker = {
       newBookmarkItem.setAttribute("id", "newBookmark");
 
       // create bookmark text
-      bookmarkValue = document.createElement("p");
-      bookmarkValue.innerText = this.bookmarkInput.value;
+      newBookmarkValue = document.createElement("p");
+      newBookmarkValue.innerText = this.bookmarkInput.value;
 
       // append text to bookmark div
-      newBookmarkItem.appendChild(bookmarkValue);
+      newBookmarkItem.appendChild(newBookmarkValue);
 
       // remove previous new bookmark item
       if (this.newBookmark.children.length > 0) {
@@ -143,7 +144,7 @@ let bookmarker = {
   generateBookmarksList: function() {
     let allBookmarksList = localStorage.getItem("bookmarks");
     for (i = 0; i < allBookmarksList.split(",").length; i++) {
-      if (this.validateUrl(allBookmarksList.split(",")[i])) {
+      if (this.validateUrl(allBookmarksList.split(",")[i]) && allBookmarksList.split(",")[i].length > 1) {
         this.buildBookmark();
         this.buildNewBookmarkDetail();
         this.bookmarkInput.value = "";
