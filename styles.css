@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+
+body {
+ background-color: #232323!important;
+ margin: 0 auto;
+ text-align: center;
+}
+
+#bookmarker {
+  font-family: 'Ubuntu Mono'!important;
+  text-align: center;
+}
+
+#error, #title {
+  font-family: 'Major Mono Display';
+  margin: 2em 0;
+}
+
+#title {
+  font-size: 2em;
+  color: white;
+}
+
+#pagination {
+  color: white;
+}
+
+#bookmarker-header {
+  display: inline-flex;
+  margin: 15px;
+}
+
+#input-bookmark {
+  height: 40px;
+  width: 40vw;
+  color: #404040;
+  border: none;
+  padding-left: 10px;
+}
+
+#add-bookmark-btn {
+  height: 40px;
+  width: 40px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+}
+
+#error {
+  height: 4em;
+  line-height: 4em;
+  background-color: #a7e6d4;
+  color: #232323;
+  margin: 30px 0;
+}
+
+#bookmarks-container {
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.bookmark {
+  height: 5vw;
+  width: 40vw;
+  display: inline-flex;
+  margin: 15px;
+  background: #fff;
+  border: none;
+}
+
+.bookmark a {
+  height: 5vw;
+  width: 35vw;
+  margin: 0;
+  line-height: 5vw;
+}
+
+.bookmark button, .newBookmarkItem button {
+  height: 5vw;
+  width: 5vw;
+  color: #404040;
+  background: #a7e6d4;
+  border: none;
+  align-items: flex-end;
+}
+
+button:hover i {
+  color: #e91e63;
+}
+
+.newBookmark {
+  height: 11vw;
+  width: 40vw;
+  display: inline-flex;
+  margin: 15px;
+  background-color: #a7e6d4;
+  border: none;
+}
+
+.newBookmark p {
+  height: 5vw;
+  line-height: 5vw;
+  color: #232323;
+  background-color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 3vw;
+}
+
+.newBookmark i {
+  color: #a7e6d4;
+}
+
+#singleBookmark {
+  margin: 15% auto;
+  text-align: center;
+  font-family: 'Ubuntu Mono'!important;
+  color: white;
+}
+
+.active {
+  display: block;
+}
+
+.inactive {
+  display: none;
+}
+
+#backButton {
+  height: 40px;
+  width: auto;
+  background-color: #a7e6d4;
+  color: white;
+  border: none;
+  margin-top: 2em;
+}
+
+#backButton:hover {
+  background-color: #e91e63;
+}
